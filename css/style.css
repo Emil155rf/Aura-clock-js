@@ -1,0 +1,163 @@
+@font-face {
+    font-family: 'Mattone';
+    src: url(../fonts/mattone-150.otf);
+}
+
+@font-face {
+    font-family: 'Porsche';
+    src: url(../fonts/PorscheNext-SemiBold.otf);
+}
+
+
+@font-face {
+    font-family: 'dubai';
+    src: url(../fonts/Dubai-Regular.ttf);
+}
+
+
+@font-face {
+    font-family: 'Harmond';
+    src: url(../fonts/Harmond-SemiBoldCondensed.otf);
+}
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    background-image: url(../images/aura.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    align-items: center;
+    font-family: 'Mattone';
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 2s ease;
+    transition: .5s ease;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+body:hover select {
+    opacity: 1;
+    transition: 1s ease;
+
+}
+
+body:hover .footer {
+    opacity: 1;
+    transition: 1s ease;
+
+}
+
+select {
+    position: relative;
+    width: 130%;
+    padding: 8px;
+    background-color: transparent;
+    backdrop-filter: blur(45px);
+    border: none;
+    border-radius: 15px;
+
+    color: #fff;
+    font-size: 16px;
+    transition: .5s ease;
+    opacity: 0;
+
+
+}
+
+
+option {
+    background-color: transparent;
+    
+
+    color: #333;
+}
+
+
+
+
+body.loaded .container {
+    opacity: 1;
+    transition: 2s ease;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1em 1em;
+}
+
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+
+.clock {
+    display: block;
+    color: #fff;
+    font-size: 17.5vh;
+}
+
+
+.clock2 {
+    display: none;
+    color: #fff;
+    font-size: 17.5vh;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    padding-bottom: 1em;
+
+}
+
+.footer-buttons {
+    display: flex;
+
+}
+
+.btn-1 {
+    margin-right: 1em;
+    font-size: 30px;
+    background-color: transparent;
+    cursor: pointer;
+    color: #fff;
+
+
+}
+
+.btn-2 {
+    margin-right: 1em;
+    font-size: 30px;
+    background-color: transparent;
+    cursor: pointer;
+    color: #fff;
+
+
+}
