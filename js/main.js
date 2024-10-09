@@ -5,6 +5,7 @@ const selector = document.querySelector('.dateBtn')
 const sea = document.querySelector('.sea')
 const night = document.querySelector('.night')
 const aura = document.querySelector('.aura')
+const container = document.querySelector('.container')
 let currentTime = document.querySelector('.btn-1')
 
 
@@ -111,3 +112,5 @@ selector.addEventListener('change', () => {
         body.style.fontFamily = 'Porsche'
     }
 })
+
+
